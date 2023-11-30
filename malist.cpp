@@ -2,9 +2,9 @@
 using namespace std;
 
 int max_in_list(int* a,int n) {
-    int ma = -100000000;
+    int ma = 100000000;
     for (int i = 0; i < n; i++) {
-        if (a[i] > ma) {
+        if (a[i] < ma) {
             ma = a[i];
         }
     }
