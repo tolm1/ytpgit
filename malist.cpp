@@ -12,6 +12,15 @@ int max_in_list(int* a,int n) {
     return ma;
 }
 
-int mait(){
-    return 0;
+int main()
+{
+    int n;
+    cin >> n;
+    int *arr = new int[n];
+    
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+
+    cout << max_in_list(arr, n);
 }
